@@ -1,25 +1,31 @@
 package cn.tedu.store.service.ex;
 
+/**
+ * 用户名冲突的异常
+ */
 public class UsernameDuplicateException extends ServiceException {
 
-    private static final long serialVersionUID = 5353523938663915888L;
+	private static final long serialVersionUID = -1224474172375139228L;
 
-    public UsernameDuplicateException() {
-    }
+	public UsernameDuplicateException() {
+		super();
+	}
 
-    public UsernameDuplicateException(String message) {
-        super(message);
-    }
+	public UsernameDuplicateException(String message, Throwable cause, boolean enableSuppression,
+			boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+	}
 
-    public UsernameDuplicateException(String message, Throwable cause) {
-        super(message, cause);
-    }
+	public UsernameDuplicateException(String message, Throwable cause) {
+		super(message, cause);
+	}
 
-    public UsernameDuplicateException(Throwable cause) {
-        super(cause);
-    }
+	public UsernameDuplicateException(String message) {
+		super(message);
+	}
 
-    public UsernameDuplicateException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
+	public UsernameDuplicateException(Throwable cause) {
+		super(cause);
+	}
+
 }
